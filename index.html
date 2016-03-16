@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>知问前端</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="js/jquery.ui.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="uEditor/uEditor.js"></script>
+
+<script type="text/javascript" src="js/index.js"></script>
+<link rel="stylesheet" href="uEditor/uEditor.css" type="text/css" />
+
+<link rel="stylesheet" href="css/smoothness/jquery.ui.css" type="text/css" />
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+	<div id="header">
+    	<div class="header_main">
+        	<h1>知问</h1>
+            <div class="header_search">
+            	<input type="text" name="search" class="search" />
+            </div>
+            <div class="header_button">
+            	<input type="button" value="查询" id="search_button" />
+                <input type="button" value="提问" id="question_button" />
+            </div>
+            <div class="header_member">
+            	<a href="javascript:void(0)" id="reg_a">注册</a>
+                <a href="javascript:void(0)" id="member">用户</a>
+                
+                <a href="javascript:void(0)" id="login_a">登陆</a>
+                <a href="javascript:void(0)" id="logout">退出</a>
+            </div>
+        </div>
+    </div>
+    <form id="reg" action="123.html" title="会员注册">
+    	<ol class="reg_error"></ol>
+    	<p>
+        	<label for="user">账号:</label>
+        	<input type="text" name="user" class="text" id="user" />
+            <span class="star">*</span>
+        </p>
+        <p>
+        	<label for="pass">密码:</label>
+        	<input type="password" name="pass" class="text" id="pass" />
+            <span class="star">*</span>
+        </p>
+        <p>
+        	<label for="email">邮箱:</label>
+        	<input type="text" name="email" class="text" id="email" />
+            <span class="star">*</span>
+        </p>
+        <p>
+        	<label>性别:</label>
+            <input type="radio" name="sex" value="male" id="male"  checked="checked"><label for="male">男</label></input><input type="radio" name="sex" value="female" id="female"><label for="female">女</label></input>
+        </p>
+        <p>
+        	<label for="date">生日:</label>
+        	<input type="text" name="birthday" readonly="readonly" class="text" id="date" />
+        </p>
+    </form>
+    
+    <form id="login" title="会员登录">
+    	<ol class="login_error"></ol>
+    	<p>
+        	<label for="user">账号:</label>
+        	<input type="text" name="login_user" class="text" id="login_user" />
+            <span class="star">*</span>
+        </p>
+        <p>
+        	<label for="pass">密码:</label>
+        	<input type="password" name="login_pass" class="text" id="login_pass" />
+            <span class="star">*</span>
+        </p>
+        <p>
+        	<input type="checkbox" name="expires" id="expires" checked="checked" />
+            <label for="expirse">登录后有效期为一周</label>
+            
+        </p>
+    </form>
+    <!--/*question*/-->
+    <form id="question" title="提问">
+    	<p>
+        	<label for="title">问题名称</label>
+        	<input type="text" name="title" style="width:390px;" class="text" id="title" />
+        </p>
+        <p>
+        	<textarea class="uEditorCustom" name="content">请填写问题描述！</textarea>
+
+        </p>
+    </form>
+
+    <div id="main">
+    	<div class="content">
+        	
+        </div>
+    </div>
+    
+    
+    
+    <div id="loading">数据交互中。。。。</div>
+    <div id="error">请登陆后操作</div>
+   
+</body>
+</html>

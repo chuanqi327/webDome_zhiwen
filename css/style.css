@@ -1,0 +1,192 @@
+﻿body{
+  margin:40px 0 0 0;
+  padding:0;
+  font-size:12px;
+  font-family:宋体;
+  background:#fff;
+}
+/*更改jQuery UI主题的对话框header的背景*/
+.ui-widget-header{
+	background:url(img/ui_header_bg.png);
+}
+/*修改提示信息的文本颜色*/
+.ui-tooltip{
+	color:red;
+}
+/*邮箱自动补全的悬停背景色*/
+.ui-menu-item a.ui-state-focus{
+	background:url(../img/ui_header_bg.png);
+			
+}
+.ui-menu-item a{
+	color:#666;	
+}
+/*日历ui的今天的单元格样式*/
+.ui-datepicker-today .ui-state-highlight{
+	border:1px solid #eee;
+	color:#f60;
+}
+/*日历ui的选定单元格样式*/
+.ui-datepicker-current-day .ui-state-active{
+	border:1px solid #eee;
+	color:#06f;	
+}
+#header{
+	width:100%;
+	height:40px;
+	background:url(../img/header.png);
+	position:absolute;
+	top:0;	
+}
+#header .header_main{
+	width:800px;
+	height:40px;
+	margin:0 auto;	
+}
+#header .header_main h1{
+	font-size:20px;
+	margin:0px;
+	padding:0;
+	color:#666;
+	line-height:40px;
+	padding:0 10px;
+	float:left;
+}
+#header .header_search{
+	float:left;
+	margin:6px 0 0 0;
+}
+#header .header_search .search{
+	width:300px;
+	height:24px;
+	border:1px solid #ccc;
+	background:#fff;
+	color:#666;
+	font-size:14px;	
+}
+#header .header_main .header_button{
+	float:left;
+	margin:5px 0 0 5px;
+}
+#header .header_main .header_member{
+    float:right;
+	height:40px;
+	line-height:40px;
+	color:#555;
+	font-size:14px;
+	
+}
+#header .header_main .header_member a{
+	text-decoration:none;
+	color:#555;
+}
+
+#reg ,#login,#question{
+	padding:15px 0 0 15px;
+}
+#reg p, #login p,#question p{
+	margin:10px 0;
+	padding:0;
+}
+
+#reg p label, #login p label,#question p label{
+	font-size:14px;
+	color:#666;
+}
+#reg .star,#login .star,#question .star{
+	color:maroon;
+	font-size:16px;
+}
+
+#reg ol,#login ol,#question ol{
+	margin:0;
+	padding:0 0 0 20px;
+}
+#reg ol li,#login ol li,#question ol li{
+	height:20px;
+}
+#reg .succ,#login .succ,#question .succ{
+	display:inline-block;
+	width:28px;
+	background:url(../img/reg_succ.png) no-repeat;
+}
+#reg .text,#login .text,#question .text{
+	border-radius:4px;
+	border:1px solid #ccc;
+	background:#fff;
+	width:200px;
+	height:25px;
+	line-height:25px;
+	text-indent:5px;
+	color:#666;
+	font-size:14px;
+}
+
+#loading{
+	background:url(../img/loading.gif) no-repeat 20px center;
+	line-height:28px;
+	font-size:14px;
+	font-weight:bold;
+	text-indent:40px;
+	color:#666;
+	}
+	
+	
+#error{
+	background:url(../img/error.png) no-repeat 20px center;
+	line-height:28px;
+	font-size:14px;
+	font-weight:bold;
+	text-indent:40px;
+	color:#666;
+	}
+	
+/*会员登录
+*/
+#expirse{
+	position:relative;
+	top:2px;
+	margin:0 0 0 110px;
+	
+}
+
+
+/*content显示*/
+
+#main{ width:70%; margin:0px auto;}
+
+.content h4 {
+	color:#666;
+	font-weight:normal;
+}
+.content h3 {
+color:#369;
+}.content .editor {
+	color:#333;
+	line-height:180%;
+	/*height:110px;*/
+	overflow:hidden;
+
+
+}
+.content .bottom {
+	padding:5px 0 0 0;
+}
+.content hr {
+	color:#ccc;
+	height:1px;
+}
+.content .up {
+	float:right;
+	color:#369;
+	cursor:pointer;
+}
+.content .down {
+	float:right;
+	color:#369;
+	cursor:pointer;
+}
+
+
+
+
